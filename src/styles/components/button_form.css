@@ -1,0 +1,21 @@
+@import "../variables.css";
+
+    .boton-moderno {
+        background-color: var(--color-boton1); 
+        color: var(--color-texto-btn1); 
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+  
+    .boton-moderno:hover {
+        background-color: var(--color-boton-hover1); 
+        color: var(--color-texto-btn1); 
+    }
+  
+    .boton-moderno:active {
+        background-color: var(--color-boton-active1); 
+    }
