@@ -11,7 +11,7 @@ const { page_title, back_image, title, subtitle} = Astro.props
         <title>{page_title}</title>
     </head>
     <body>
-        <div class="container" style=`background-image: url('${{back_image}}');`>
+        <div class="container" style={back_image}>
             <div class="formulario">
                 <h1>{title}</h1>
                 <h2>{subtitle}</h2>

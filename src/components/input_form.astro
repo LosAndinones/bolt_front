@@ -1,0 +1,10 @@
+---
+import "../styles/components/input_form.css"
+const {placeholder, label, error} = Astro.props;
+---
+<div class="input_container">
+    <label for="input">{label}</label>
+    <input id="input" type="text" placeholder={placeholder}>
+    <p class={`hidden ${error ? '' : 'visible'}`}>{error}</p>
+</div>
+  

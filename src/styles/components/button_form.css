@@ -1,21 +1,26 @@
 @import "../variables.css";
 
-    .boton-moderno {
-        background-color: var(--color-boton1); 
-        color: var(--color-texto-btn1); 
-        border: none;
-        border-radius: 5px;
-        padding: 10px 20px;
-        font-size: 16px;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
-    }
+.button-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 10px; 
+    background-color: var(--color-boton1); 
+    color: var(--color-texto-btn1); /* Color del texto del botón */
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transición de color suave */
+  }
   
-    .boton-moderno:hover {
-        background-color: var(--color-boton-hover1); 
-        color: var(--color-texto-btn1); 
-    }
+  .button-container:hover {
+    background-color: var(--color-boton-hover1); /* Cambio de color al pasar el ratón sobre el botón */
+  }
   
-    .boton-moderno:active {
-        background-color: var(--color-boton-active1); 
-    }
+  .button-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px; 
+    margin-right: auto; 
+  }
+  

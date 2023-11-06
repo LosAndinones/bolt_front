@@ -1,15 +1,44 @@
 ---
 import BoltForm from "../layouts/bolt_form.astro";
 import ButtonForm from "../components/button_form.astro";
+import IconButtonForm from "../components/icon_button_form.astro";
+import InputForm from "../components/input_form.astro";
+import AForm from "../components/a_form.astro";
+
+const background_url = "https://previews.123rf.com/images/tovovan/tovovan1703/tovovan170300091/74578597-fondo-de-dise%C3%B1o-de-material-4k-abstracto-moderno-blured-fondo-gris-oscuro-para-el-dise%C3%B1o.jpg";
 ---
 
 <BoltForm   page_title="Login"
-            back_image="https://previews.123rf.com/images/tovovan/tovovan1703/tovovan170300091/74578597-fondo-de-dise%C3%B1o-de-material-4k-abstracto-moderno-blured-fondo-gris-oscuro-para-el-dise%C3%B1o.jpg"
+            back_image={`background-image: url('${background_url}')`}
             title="Bolt"
             subtitle="Hola, estas de vuelta!">
     
-            
+    <InputForm 
+        placeholder="username"
+        error="please enter your username"
+        label="Username:"
+    />   
+    
+    <InputForm 
+        placeholder="password"
+        error="please enter your password"
+        label="Password:"
+    />      
+
+    <AForm
+        link="index"
+        text="olvidaste tu contraseña? D:"
+    />
+    <IconButtonForm
+        text="Continuar con google"
+        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
+    />
+    <IconButtonForm
+        text="Continuar con discord"
+        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
+    />
     <ButtonForm
         text="submit"
+        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
     />
 </BoltForm>
