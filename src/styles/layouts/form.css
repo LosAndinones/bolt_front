@@ -1,0 +1,36 @@
+/* Estilos para el fondo de la página */
+body {
+    margin: 0;
+    padding: 0;
+    background: no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Estilos para el contenedor que contiene el formulario */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para el formulario en el centro */
+.formulario {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los encabezados h1 y h2 dentro del formulario */
+.formulario h1 {
+    font-size: 24px;
+}
+
+.formulario h2 {
+    font-size: 18px;
+}

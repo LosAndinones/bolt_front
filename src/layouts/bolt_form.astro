@@ -1,0 +1,22 @@
+---
+import "../styles/layouts/form.css"
+const { page_title, back_image, title, subtitle} = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{page_title}</title>
+    </head>
+    <body>
+        <div class="container" style=`background-image: url('${{back_image}}');`>
+            <div class="formulario">
+                <h1>{title}</h1>
+                <h2>{subtitle}</h2>
+                <slot />
+            </div>
+        </div>
+    </body>
+</html>
