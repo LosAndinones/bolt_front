@@ -1,9 +1,9 @@
 ---
 import "../styles/components/button_form.css"
-const {text} = Astro.props;
+const {text, imagen} = Astro.props;
 ---
 <div class="button-container">
+    <img class="button-icon" src={imagen} alt="Icono" />
     <p>{text}</p>
 </div>
-
-<!-- Se podría cambiar por un buton si da problemas de estilos :D -->
+  
