@@ -1,0 +1,30 @@
+
+@import "../variables.css";
+
+.date_birth_select {
+    display: flex;
+}
+
+select {
+    appearance: none; /* Oculta el estilo nativo del sistema */
+    border: 1px solid #ccc; /* Borde del select */
+    padding: 10px; /* Espaciado interior */
+    border-radius: 5px; /* Borde redondeado */
+    background-color: #fff; /* Color de fondo */
+    color: #333; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%; /* Ancho completo del contenedor */
+    cursor: pointer;
+    outline: none; /* Elimina el borde de enfoque */
+    transition: border-color 0.3s; /* Transición de color del borde */
+  }
+  
+  /* Estilo para el hover (al pasar el ratón) */
+  select:hover {
+    border-color: #0077FF; /* Cambio de color del borde al pasar el ratón */
+  }
+  
+  /* Estilo para el foco (cuando está seleccionado) */
+  select:focus {
+    border-color: #0077FF; /* Cambio de color del borde cuando está enfocado */
+  }

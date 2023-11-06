@@ -6,6 +6,7 @@ const { page_title, back_image, title, subtitle} = Astro.props
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Toca ponerle icono a esto :D -->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{page_title}</title>
@@ -15,6 +16,7 @@ const { page_title, back_image, title, subtitle} = Astro.props
             <div class="formulario">
                 <h1>{title}</h1>
                 <h2>{subtitle}</h2>
+                <!-- Se puede cambiar esto por un componente que se llame baner y meterle ahí el icono y que quede mas lindo -->
                 <slot />
             </div>
         </div>
