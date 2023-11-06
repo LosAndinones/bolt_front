@@ -1,8 +1,12 @@
 :root {
+    /*fuentes universales*/
+
     /*boton 1 boton de formulario register y login*/
     --color-boton1: #8B0000;
     --color-boton-hover1: #ff4747;
     --color-boton-active1: #6B0000;
     --color-texto-btn1: white;
 
+    /*inputs de formulario register y login*/
+    
 }
