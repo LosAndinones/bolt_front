@@ -1,8 +1,8 @@
 ---
 import "../styles/components/button_form.css"
-const {text} = Astro.props;
+const {text, id} = Astro.props;
 ---
-<div class="button-container">
+<div class="button-container" id={id}>
     <p>{text}</p>
 </div>
 
