@@ -1,7 +1,13 @@
 /* Estilos para el fondo de la página */
 body {
-    margin: 0;
-    padding: 0;
+    font-family: "Favorit",
+    "Helvetica Neue",
+    "HelveticaNeue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    margin: 0px;
+    padding: 0px;
     background: no-repeat center center fixed;
     background-size: cover;
     height: 100vh;
@@ -12,25 +18,47 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-size: cover;
+    background-repeat: repeat;
     background-position: center;
 }
 
 /* Estilos para el formulario en el centro */
 .formulario {
+    color: #ffffff;
+    width: 60vh;
+    margin-top: -10px;
     text-align: center;
-    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    background: rgba(10, 8, 8, 0.8); /* Fondo semitransparente */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    text-align: left;
 }
 
 /* Estilos para los encabezados h1 y h2 dentro del formulario */
 .formulario h1 {
     font-size: 24px;
+    text-align: center;
 }
 
 .formulario h2 {
     font-size: 18px;
+    text-align: center;
 }
+
+.formulario a{
+    width: 80%;
+}
+
+.p-icon-button-form {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+

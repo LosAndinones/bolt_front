@@ -6,49 +6,49 @@ import InputForm from "../components/input_form.astro";
 import CheckboxForm from "../components/checkbox_form.astro";
 import DateBirthSelect from "../components/date_birth_select.astro";
 
-const background_url = "https://previews.123rf.com/images/tovovan/tovovan1703/tovovan170300091/74578597-fondo-de-dise%C3%B1o-de-material-4k-abstracto-moderno-blured-fondo-gris-oscuro-para-el-dise%C3%B1o.jpg";
+const background_url = "/src/public/images/fondoRegistroLogin.png";
 ---
 
-<BoltForm   page_title="Register"
+<BoltForm   page_title="Register"   
             back_image={`background-image: url('${background_url}')`}
             title="Bolt"
             subtitle="Crear una cuenta">
     
     <InputForm 
-        placeholder="email"
-        error="please enter your email"
-        label="Email:"
+        placeholder="Email" 
+        error="Please enter your email"
+        label="Email"
     />   
     
     <InputForm 
-        placeholder="username"
-        error="please enter your username"
-        label="Username:"
+        placeholder="Username"
+        error="Please enter your username"
+        label="Username"
     /> 
 
     <InputForm 
-        placeholder="password"
-        error="please enter your password"
-        label="Password:"
+        placeholder="Password"
+        error="Please enter your password"
+        label="Password"
     />   
 
     <InputForm 
-        placeholder="password"
-        error="password should be the same xd"
-        label="Confirm Password:"
+        placeholder="Password"
+        error="Password should be the same xd"
+        label="Confirm Password"
     />
 
     <DateBirthSelect
-        text="fecha de nacimiento: "
+        text="Fecha de nacimiento"
     />
 
     <IconButtonForm
-        text="Continuar con google"
-        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
+        text="Inicia sesión con Google"
+        imagen="https://p1.hiclipart.com/preview/209/923/667/google-logo-background-g-suite-google-pay-google-doodle-text-circle-line-area-png-clipart.jpg"
     />
     <IconButtonForm
-        text="Continuar con discord"
-        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
+        text="Inicia sesión con Discord"
+        imagen="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png"
     />
 
     <CheckboxForm
@@ -57,7 +57,7 @@ const background_url = "https://previews.123rf.com/images/tovovan/tovovan1703/to
     />
 
     <ButtonForm
-        text="submit"
+        text="Submit"
         imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
     />
 </BoltForm>

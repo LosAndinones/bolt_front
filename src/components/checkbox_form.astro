@@ -2,7 +2,7 @@
 import "../styles/components/checkbox_form.css"
 const {text, error} = Astro.props;
 ---
-<div class="input_container">
+<div class="input_container_check">
     <input id="input" type="checkbox">
     <p class="text">{text}</p>
     <p class={`hidden ${error ? 'visible' : ''}`}>{error}</p>
