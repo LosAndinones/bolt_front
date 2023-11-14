@@ -5,7 +5,7 @@ import IconButtonForm from "../components/icon_button_form.astro";
 import InputForm from "../components/input_form.astro";
 import AForm from "../components/a_form.astro";
 
-const background_url = "https://previews.123rf.com/images/tovovan/tovovan1703/tovovan170300091/74578597-fondo-de-dise%C3%B1o-de-material-4k-abstracto-moderno-blured-fondo-gris-oscuro-para-el-dise%C3%B1o.jpg";
+const background_url = "/src/public/images/fondoRegistroLogin.png";
 ---
 
 <BoltForm   page_title="Login"
@@ -14,31 +14,31 @@ const background_url = "https://previews.123rf.com/images/tovovan/tovovan1703/to
             subtitle="Hola, estas de vuelta!">
     
     <InputForm 
-        placeholder="username"
+        placeholder="Ingrese su usuario"
         error="please enter your username"
-        label="Username:"
+        label="Username"
     />   
     
     <InputForm 
-        placeholder="password"
+        placeholder="Ingrese su contraseña"
         error="please enter your password"
-        label="Password:"
+        label="Password"
     />      
 
     <AForm
-        link="index"
-        text="olvidaste tu contraseña? D:"
+        link="Index"
+        text="¿Has olvidado tu contraseña?"
     />
     <IconButtonForm
-        text="Continuar con google"
+        text="Inicia sesión con Google"
         imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
     />
     <IconButtonForm
-        text="Continuar con discord"
-        imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
+        text="Inicia sesión con Discord"
+        imagen="https://logodownload.org/wp-content/uploads/2017/11/discord-logo-1-1.png"
     />
     <ButtonForm
-        text="submit"
+        text="Submit"
         imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
     />
 </BoltForm>

@@ -1,17 +1,41 @@
 
 @import "../variables.css";
 
-.date_birth_select {
+.date_birth_select  {
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+p{ 
+  margin-top: auto;
+  font-size: 17px;
+  width: 82%;
+}
+
+.dayMonthYear {
+  align-items: center;
+  margin-top: -13px;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+text {
+  margin-bottom: 10px;
 }
 
 select {
+    margin-bottom: 25px;
+    margin-right: 2px;
     appearance: none; /* Oculta el estilo nativo del sistema */
     border: 1px solid #ccc; /* Borde del select */
-    padding: 10px; /* Espaciado interior */
+    padding: 5px; /* Espaciado interior */
     border-radius: 5px; /* Borde redondeado */
     background-color: #fff; /* Color de fondo */
-    color: #333; /* Color del texto */
+    color: #ccc; /* Color del texto */
     font-size: 16px; /* Tamaño de fuente */
     width: 100%; /* Ancho completo del contenedor */
     cursor: pointer;

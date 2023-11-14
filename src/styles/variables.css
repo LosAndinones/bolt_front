@@ -2,10 +2,11 @@
     /*fuentes universales*/
 
     /*boton 1 boton de formulario register y login*/
-    --color-boton1: #8B0000;
-    --color-boton-hover1: #ff4747;
-    --color-boton-active1: #6B0000;
-    --color-texto-btn1: white;
+    --color-boton1: #ffffff;
+    --color-boton-hover1: #0077FF;
+    --color-boton-active1: #ffffff;
+    --color-white: white;
+    --color-black: #000000;
 
     /*inputs de formulario register y login*/
     

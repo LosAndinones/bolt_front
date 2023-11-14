@@ -1,14 +1,15 @@
 @import "../variables.css";
 
-a {
+a { 
+    margin-left: 7%;
     text-decoration: none;
-    color: #0077FF; /* Color del texto del enlace */
-    font-weight: 600; /* Peso de la fuente */
+    color: #0088C2; /* Color del texto del enlace */
+    font-weight: 200; /* Peso de la fuente */
     transition: color 0.3s; /* Transición de color suave al pasar el ratón */
-  
+    font-size: 90%;
     /* Estilos para el hover (cuando el mouse está sobre el enlace) */
     &:hover {
-      color: #FF4500; /* Cambia el color del texto al pasar el ratón */
+      color: #ff45ff; /* Cambia el color del texto al pasar el ratón */
     }
   }
   

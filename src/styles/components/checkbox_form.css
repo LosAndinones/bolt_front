@@ -1,12 +1,14 @@
 @import "../variables.css";
 
-.input_container {
+.input_container_check {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    flex-direction: row;
+    margin-left: 15%;    
   }
   
-  .input_container input[type="checkbox"] {
+  .input_container_check input[type="checkbox"] {
     appearance: none;
     width: 20px; /* Tamaño del cuadro del checkbox */
     height: 20px;
@@ -16,7 +18,7 @@
     cursor: pointer;
   }
   
-  .input_container input[type="checkbox"]:checked {
+  .input_container_check input[type="checkbox"]:checked {
     background-color: #0077FF; /* Color de fondo del checkbox cuando está marcado */
   }
   
