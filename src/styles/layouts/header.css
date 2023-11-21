@@ -1,0 +1,51 @@
+
+
+#header {
+    font-family:"Favorit",
+    "Helvetica Neue",
+    "HelveticaNeue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    width: 100%;
+    background-color: rgba(10, 8, 8, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  p {
+    margin-left: 70%;
+  }
+
+  h1 {
+        margin-left: 70%;
+    /* Estilo inicial */
+        color: #fff;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  li {
+    margin-bottom: 5%;
+    margin-left: 70%;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  

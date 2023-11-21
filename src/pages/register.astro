@@ -14,19 +14,22 @@ const background_url = "/src/public/images/fondoRegistroLogin.png";
             title="Bolt"
             subtitle="Crear una cuenta">
     
-    <InputForm 
+    <InputForm
+        id = "email_input"
         placeholder="Email" 
         error="Please enter your email"
         label="Email"
     />   
     
-    <InputForm 
+    <InputForm
+        id = "username_input" 
         placeholder="Username"
         error="Please enter your username"
         label="Username"
     /> 
 
-    <InputForm 
+    <InputForm
+        id = "password_input"  
         placeholder="Password"
         error="Please enter your password"
         label="Password"
@@ -57,7 +60,50 @@ const background_url = "/src/public/images/fondoRegistroLogin.png";
     />
 
     <ButtonForm
+        id = "submit_register"
         text="Submit"
         imagen="https://play-lh.googleusercontent.com/aFWiT2lTa9CYBpyPjfgfNHd0r5puwKRGj2rHpdPTNrz2N9LXgN_MbLjePd1OTc0E8Rl1=w240-h480-rw"
     />
 </BoltForm>
+
+<script>
+
+    const submit_button = document.getElementById('submit_register');
+    const email_input = document.getElementById('email_input');
+    const username_input = document.getElementById('username_input');
+    const password_input = document.getElementById('password_input');
+
+    submit_button.addEventListener('click', () => {
+        let user = username_input.value;
+        let password = password_input.value;
+        let mail = email_input.value;
+        console.log(user);
+        register(user, password, mail);
+    });
+
+    function register(user: string, pass: string, mail: string) {
+        fetch('https://authrest.onrender.com/api/register/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: user,
+                password: pass,
+                email: mail,
+                is_superuser: false
+            })
+        
+        }).then(function (resp) {
+            if (resp.ok) {
+                console.log('ok :)');
+            }else {
+                console.log('bad :C');
+            }
+        }).then(function (data) {
+            console.log(data);
+        }).catch(function (err) {
+            console.error('Error de mierda', err);
+        })
+    }
+</script>
