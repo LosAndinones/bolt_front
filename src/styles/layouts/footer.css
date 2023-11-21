@@ -1,0 +1,14 @@
+
+#footer {
+    font-family: "Favorit",
+    "Helvetica Neue",
+    "HelveticaNeue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    color: #fff;
+    width: 100%;
+    background-color: rgba(10, 8, 8, 0.8);
+    text-align: center;
+    padding: 20px;
+}

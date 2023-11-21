@@ -1,0 +1,93 @@
+
+#main {
+    font-family:"Favorit",
+    "Helvetica Neue",
+    "HelveticaNeue",
+    Helvetica,
+    Arial,
+    sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #fff;
+    background-color: rgba(10, 8, 8, 0.8);
+    text-align: center;
+    padding: 6%;    
+    border-left: 1px solid #7575758c;
+    border-right: 1px solid #7575758c;
+}
+
+#ulMain{
+    border-bottom: 1px solid #7575758c;
+    display: flex;
+    flex-direction: row;
+}
+
+.liMain{
+    margin-left: 2%;
+    transition: color 0.3s ease, border-bottom 0.3s ease, transform 0.3s ease;
+}
+
+.liMain:hover a {
+    font-size: 16.5px;
+    border-bottom: 2px solid rgb(0, 184, 255); /* Añade un subrayado al pasar el mouse */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el mouse */
+}
+
+.publications {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .publication {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+ #userPublication{
+    margin: auto;
+    margin-left: 2%;
+    padding: 0;
+    font-weight: bold;
+    font-size: 8%px;
+ }
+
+  .part1 {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-color: #748496; /* Color de fondo predeterminado para todas las partes */
+    display: flex;
+  }
+
+  
+    .part2 {
+    flex: 2;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    box-sizing: border-box;
+    background-color: red; /* Color de fondo predeterminado para todas las partes */
+  }
+  
+  .part3 {
+    flex: 3;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    box-sizing: border-box;
+    background-color: yellow; /* Color de fondo predeterminado para todas las partes */
+  }
+  
+  .part4 {
+    flex: 4;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    box-sizing: border-box;
+    background-color: rebeccapurple; /* Color de fondo predeterminado para todas las partes */
+  }
+  
+  .part5 {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    flex: 5;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    box-sizing: border-box;
+    background-color: blue; /* Color de fondo predeterminado para todas las partes */
+  }
+  
